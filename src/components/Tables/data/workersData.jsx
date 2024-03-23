@@ -61,4 +61,25 @@ export const data = [
         number: 7845895689,
         salary: 300,
     },
+    {
+        id: 6,
+        name: "Ramesh",
+        address: "Ranpur",
+        number: 7845895689,
+        salary: 300,
+    },
+    {
+        id: 6,
+        name: "Ramesh",
+        address: "Ranpur",
+        number: 7845895689,
+        salary: 300,
+    },
+    {
+        id: 6,
+        name: "Ramesh",
+        address: "Ranpur",
+        number: 7845895689,
+        salary: 300,
+    },
 ];

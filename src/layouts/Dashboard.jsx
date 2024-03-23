@@ -5,20 +5,26 @@ import { SideNavbar, Navbar, Footer } from "../components/index";
 
 const Dashboard = () => {
     return (
-        <div className="min-h-screen bg-blue-gray-50/50">
+        <div className='min-h-screen bg-blue-gray-50/50'>
             <SideNavbar routes={routes} />
-            <div className="p-4 xl:ml-80">
+            <div className='p-4 xl:ml-80 h-screen flex flex-col justify-between'>
                 <Navbar />
-                <Routes>
-                    {routes.map(
-                        ({ layout, pages }) =>
-                            layout === "dashboard" &&
-                            pages.map(({ path, element }) => (
-                                <Route exact path={path} element={element} />
-                            ))
-                    )}
-                </Routes>
-                <div className="text-blue-gray-600">
+                <div>
+                    <Routes>
+                        {routes.map(
+                            ({ layout, pages }) =>
+                                layout === "dashboard" &&
+                                pages.map(({ path, element }) => (
+                                    <Route
+                                        exact
+                                        path={path}
+                                        element={element}
+                                    />
+                                ))
+                        )}
+                    </Routes>
+                </div>
+                <div className='text-blue-gray-600 '>
                     <Footer />
                 </div>
             </div>
